@@ -1,7 +1,6 @@
 # llm-support
 
 ## llama.cpp
-- My fork: `git clone https://github.com/leighklotz/llama.cpp`
 - Original: `git clone https://github.com/ggerganov/llama.cpp`
 
 ## llama foundation model with llama-dl
