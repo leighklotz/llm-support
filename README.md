@@ -1,21 +1,24 @@
 # llm-support
 
 ## llama.cpp
-- git clone https://github.com/ggerganov/llama.cpp
+- My fork: `git clone https://github.com/leighklotz/llama.cpp`
+- Original: `git clone https://github.com/ggerganov/llama.cpp`
 
-## llama-dl
+## llama foundation model with llama-dl
 - https://python.langchain.com/en/latest/integrations/ctransformers.html
-
-## llama
 - python3 convert.py models/65B/
 - ./quantize ./models/65B/ggml-model-f16.bin ./models/30B/ggml-model-q4_0.bin q4_0
-- ./examples/chat-65B-4_0.sh
-- ./examples/chatscripts/chatLLaMa.sh 30B/ggml-model-q5_K_M.bin
+
+## HuggingFace Vicuna instead of foundation model
 
 ## vicuna
 - https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GGML
 - ./main -t 10 -ngl 32 -m Wizard-Vicuna-30B.ggmlv3.q5_0.bin --color -c 2048 --temp 0.7 --repeat_penalty 1.1 -n -1 -p "### Instruction: Write a story about llamas\n### Response:"
 - ./main -m ./models/vicuna_13B/ggml-vicuna-13b-4bit.bin -t 4 -c 2048 -n 2048 --color -i --reverse-prompt "### Human:" --in ' ' -p "### Human: What is the relation between llama and vicuna?\n### Assistant:"
+## chatscripts
+- git clone https://github.com/leighklotz/llama-chatscripts
+- ./wizard-vicuna.sh
+- uses /tmp to store cached prompt, maybe 100-200MB
 
 # References
 - https://finbarr.ca/how-is-llama-cpp-possible/
