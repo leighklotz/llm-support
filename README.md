@@ -1,6 +1,8 @@
 # llm-support
 
 ## llama.cpp
+https://github.com/ggerganov/llama.cpp
+
 - Original: `git clone https://github.com/ggerganov/llama.cpp`
 
 ## llama foundation model with llama-dl
@@ -15,6 +17,8 @@
 - https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GGML
 
 ## chatscripts
+https://github.com/leighklotz/llama-chatscripts
+
 - `git clone https://github.com/leighklotz/llama-chatscripts`
 - `./wizard-vicuna.sh`
 - uses /tmp to store cached prompt, maybe 100-200MB
